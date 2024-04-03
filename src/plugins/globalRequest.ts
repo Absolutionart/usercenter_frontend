@@ -8,7 +8,7 @@ import { stringify } from 'querystring';
  */
 const request = extend({
   credentials: 'include', // 默认请求是否携带cookie
-  prefix: process.env.NODE_ENV === 'production' ? 'http://user-center.code-ikun.cn' : undefined,
+  prefix: process.env.NODE_ENV === 'production' ? 'http://ucenter-back.absolutecode.art' : undefined,
   //requestType: 'form',
 });
 

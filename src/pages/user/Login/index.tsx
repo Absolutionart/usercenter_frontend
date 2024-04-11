@@ -1,4 +1,7 @@
 import Footer from '@/components/Footer';
+import { Col, Row } from 'antd';
+import { Typography } from 'antd';
+import { CopyrightOutlined } from '@ant-design/icons';
 import { login } from '@/services/ant-design-pro/api';
 import { getFakeCaptcha } from '@/services/ant-design-pro/login';
 import {
@@ -19,6 +22,8 @@ import { Alert, Divider, message, Space, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { history, Link, useModel } from 'umi';
 import styles from './index.less';
+import MyFooter from '@/components/Footer/myfooter';
+
 const LoginMessage: React.FC<{
   content: string;
 }> = ({ content }) => (
@@ -216,7 +221,8 @@ const Login: React.FC = () => {
           </div>
         </LoginForm>
       </div>
-      <Footer />
+      <MyFooter/>
+      {/* <Footer /> */}
     </div>
   );
 };

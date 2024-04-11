@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import MyFooter from '@/components/Footer/myfooter';
 import { register } from '@/services/ant-design-pro/api';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { LoginForm, ProFormText } from '@ant-design/pro-components';
@@ -155,7 +156,8 @@ const Register: React.FC = () => {
           )}
         </LoginForm>
       </div>
-      <Footer />
+      <MyFooter/>
+      {/* <Footer /> */}
     </div>
   );
 };

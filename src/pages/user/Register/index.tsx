@@ -48,10 +48,10 @@ const Register: React.FC = () => {
           query,
         });
         return;
-      } 
+      }
       // else {
       //   // throw new Error(`register error id = ${userId}`);
-      //   throw new Error(res.description); 
+      //   throw new Error(res.description);
       // }
     } catch (error: any) {
       const defaultLoginFailureMessage = '注册失败，请重试！';
@@ -80,7 +80,7 @@ const Register: React.FC = () => {
           }}
         >
           <Tabs activeKey={type} onChange={setType}>
-          <Tabs.TabPane key="account" tab={'账户注册'} />
+            <Tabs.TabPane key="account" tab={'账户注册'} />
             {/* <Tabs.TabPane key="mobile" tab={'手机号注册'} /> */}
           </Tabs>
 
@@ -156,8 +156,8 @@ const Register: React.FC = () => {
           )}
         </LoginForm>
       </div>
-      <MyFooter/>
-      {/* <Footer /> */}
+      {/* <MyFooter/> */}
+      <Footer />
     </div>
   );
 };

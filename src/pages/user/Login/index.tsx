@@ -221,8 +221,8 @@ const Login: React.FC = () => {
           </div>
         </LoginForm>
       </div>
-      <MyFooter/>
-      {/* <Footer /> */}
+      {/* <MyFooter/> */}
+      <Footer />
     </div>
   );
 };
